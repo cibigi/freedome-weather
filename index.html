@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Freedome Weather</title>
+		<meta charset="utf-8">
+
+
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+
+	<body>
+		<section class="app-container">
+			<!-- Previsioni attuali -->
+			<div class="card current-weather-card">
+				<div class="current-left">
+					<h1 id="current-temp">--°</h1>
+					<p id="current-location">Loading...</p>
+				</div>
+				<div class="current-right">
+					<div class="weather-icon-large" id="current-icon"></div>
+				</div>
+			</div>
+
+			<!-- Previsioni orarie -->
+			<div class="card forecast-card">
+				<div class="carousel-wrapper" id="hourly-carousel">
+					<div class="carousel-container" id="hourly-container"></div>
+				</div>
+				<div class="dots" id="hourly-dots"></div>
+			</div>
+
+			<!-- Previsioni giornaliere -->
+			<div class="card forecast-card">
+				<div class="carousel-wrapper" id="daily-carousel">
+					<div class="carousel-container" id="daily-container"></div>
+				</div>
+				<div class="dots" id="daily-dots"></div>
+			</div>
+		</section>
+
+		<script src="script.js"></script>
+	</body>
+</html>

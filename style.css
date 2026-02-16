@@ -1,0 +1,140 @@
+* {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f6f6f6;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+.app-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	width: 100%;
+	max-width: 400px;
+}
+
+/* Card */
+.card {
+	background-color: #ffffff;
+	width: 100%;
+	padding: 25px;
+	border-radius: 30px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+	display: flex;
+	flex-direction: column;
+}
+
+/* Previsioni attuali */
+.current-weather-card {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 180px;
+	background: linear-gradient(135deg, #ffffff 60%, #fff8e1 100%);
+}
+
+.current-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#current-temp {
+	font-size: 80px;
+	font-weight: 600;
+	color: #2c3e50;
+	line-height: 1;
+}
+
+#current-location {
+	font-size: 16px;
+	color: #95a5a6;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.current-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.weather-icon-large {
+	width: 100px;
+	height: 100px;
+}
+
+/* Previsioni orarie e giornaliere */
+.forecast-card {
+	justify-content: center;
+}
+
+.carousel-wrapper {
+	overflow: hidden;
+	width: 100%;
+}
+
+.carousel-container {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	transition: transform 0.4s ease-in-out;
+	width: 100%;
+}
+
+/* Stile degli elementi nei caroselli */
+.forecast-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 0 0 20%;
+	text-align: center;
+}
+
+.forecast-item p {
+	font-size: 12px;
+	font-weight: 600;
+	color: #2c3e50;
+	margin: 5px 0;
+}
+
+.forecast-item .sub-text {
+	font-size: 10px;
+	color: #bdc3c7;
+	font-weight: 500;
+}
+
+.forecast-icon {
+	width: 32px;
+	height: 32px;
+	margin: 5px 0;
+}
+
+/* Navigazione */
+.dots {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+	gap: 6px;
+}
+
+.dot {
+	width: 6px;
+	height: 6px;
+	background-color: #e0e0e0;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.dot.active {
+	background-color: #2c3e50;
+}
